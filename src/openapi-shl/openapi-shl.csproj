@@ -7,4 +7,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageId>Shl.OpenApi</PackageId>
+    <Authors>Andreas Jagelund</Authors>
+    <Version>0.0.1</Version>
+    <PackageTags>SHL, OpenApi, Swedish Hockey league, Öppet API</PackageTags>
+    <Description>Implementation of Swedish Hockey League OpenApi for .NET</Description>
+    <RepositoryUrl>git@github.com:ajagelund/openapi-shl.git</RepositoryUrl>
+  </PropertyGroup>
 </Project>

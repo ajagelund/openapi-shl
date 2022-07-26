@@ -2,7 +2,7 @@ name: publish to nuget
 on:
   push:
     branches:
-      - main # Default release branch, may also be named 'master' or 'develop'
+      - main
 jobs:
   publish:
     name: build, pack & publish
@@ -10,18 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      # - name: Setup dotnet
-      #   uses: actions/setup-dotnet@v1
-      #   with:
-      #     dotnet-version: 3.1.200
-
-      # Publish
-      - name: publish on version change
-        id: publish_nuget
-        uses: brandedoutcast/publish-nuget@v2.5.5
-        with:
-          PROJECT_FILE_PATH: src/openapi-shl/openapi-shl.csproj
-          TAG_COMMIT: true
-          TAG_FORMAT: v*
-          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
-          NUGET_SOURCE: https://api.nuget.org
+      - name: dotnet pack
+        run: dotnet pack -c Release -o . src/openapi-shl/openapi-shl.csproj
+      - name: dotnet nuget push
+        run: dotnet nuget push *.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json --skip-duplicate

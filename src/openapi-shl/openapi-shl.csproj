@@ -14,7 +14,7 @@
     <PackageId>Shl.OpenApi</PackageId>
     <Authors>Andreas Jagelund</Authors>
     <Version>0.0.2</Version>
-    <PackageTags>SHL, OpenApi, Swedish Hockey league, Öppet API</PackageTags>
+    <PackageTags>SHL, OpenApi, API, Hockey</PackageTags>
     <Description>Implementation of Swedish Hockey League OpenApi for .NET</Description>
     <RepositoryUrl>git@github.com:ajagelund/openapi-shl.git</RepositoryUrl>
   </PropertyGroup>

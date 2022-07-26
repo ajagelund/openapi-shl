@@ -12,10 +12,15 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <PackageId>Shl.OpenApi</PackageId>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <Authors>Andreas Jagelund</Authors>
-    <Version>0.0.3</Version>
+    <Version>0.0.4</Version>
     <PackageTags>SHL, OpenApi, API, Hockey</PackageTags>
     <Description>Implementation of Swedish Hockey League OpenApi for .NET</Description>
     <RepositoryUrl>git@github.com:ajagelund/openapi-shl.git</RepositoryUrl>
   </PropertyGroup>
+  
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 </Project>

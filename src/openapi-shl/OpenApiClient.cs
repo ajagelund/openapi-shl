@@ -6,7 +6,7 @@ using Shl.Api.Models;
 
 namespace Shl.Api;
 
-public class Client
+public class OpenApiClient
 {
     private OpenApiConfiguration Configuration { get; set; }
     private readonly HttpClient _httpClient;
@@ -19,7 +19,7 @@ public class Client
         Converters = { new CustomDateTimeConverter() },
     };
 
-    public Client(OpenApiConfiguration configuration)
+    public OpenApiClient(OpenApiConfiguration configuration)
     {
         Configuration = configuration;
         

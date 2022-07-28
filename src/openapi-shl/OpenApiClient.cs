@@ -2,7 +2,12 @@ using System.Net.Http.Headers;
 using System.Text.Json;
 using Shl.Api.Configuration;
 using Shl.Api.Contracts;
+using Shl.Api.Contracts.Games;
+using Shl.Api.Contracts.Media;
+using Shl.Api.Contracts.Statistics;
+using Shl.Api.Contracts.Teams;
 using Shl.Api.Models;
+using Team = Shl.Api.Contracts.Teams.Team;
 
 namespace Shl.Api;
 
@@ -27,7 +32,7 @@ public class OpenApiClient
         _httpClient.BaseAddress = new Uri(BaseUrl);
     }
 
-    public async Task<string> GetToken()
+    public async Task<string?> GetToken()
     {
         var encodedContent = new FormUrlEncodedContent(new KeyValuePair<string, string>[]
         {
@@ -126,26 +131,26 @@ public class OpenApiClient
         return await InvokeApi<GoalKeeperStatistics[]>(httpRequestMessage);
     }
 
-    public async Task<TeamStandings[]?> GetStandingsAsync(int season, string[]? teamIds = null)
+    public async Task<TeamStanding[]?> GetStandingsAsync(int season, string[]? teamIds = null)
     {
         var requestUri = $"/seasons/{season}/statistics/teams/standings";
 
         var httpRequestMessage = new HttpRequestMessage(HttpMethod.Get, requestUri);
         
-        var response = await InvokeApi<TeamStandings[]>(httpRequestMessage);
+        var response = await InvokeApi<TeamStanding[]>(httpRequestMessage);
         
         return teamIds != null
             ? response?.Where(x => teamIds.Contains(x.TeamCode)).ToArray()
             : response;
     }
 
-    public async Task<Teams[]?> GetTeams()
+    public async Task<Team[]?> GetTeams()
     {
         var requestUri = "/teams"; 
 
         var httpRequestMessage = new HttpRequestMessage(HttpMethod.Get, requestUri);
         
-        return await InvokeApi<Teams[]>(httpRequestMessage);
+        return await InvokeApi<Team[]>(httpRequestMessage);
     }
 
     public async Task<Fact?> GetTeam(string teamCode)

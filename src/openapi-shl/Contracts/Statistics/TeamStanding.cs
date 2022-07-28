@@ -1,8 +1,8 @@
 using System.Text.Json.Serialization;
 
-namespace Shl.Api.Contracts;
+namespace Shl.Api.Contracts.Statistics;
 
-public class TeamStandings
+public class TeamStanding
 {
 
     [JsonPropertyName("gp")]

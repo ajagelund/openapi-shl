@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Shl.Api.Contracts;
+namespace Shl.Api.Contracts.Media;
 
 public class Article
 {

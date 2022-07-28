@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Shl.Api.Contracts;
+namespace Shl.Api.Contracts.Media;
 
 public class Video
 {
@@ -12,17 +12,17 @@ public class Video
     public int Length { get; set; }
 
     [JsonPropertyName("name")]
-    public string Name { get; set; }
+    public string? Name { get; set; }
 
     [JsonPropertyName("team_code")]
-    public string TeamCode { get; set; }
+    public string? TeamCode { get; set; }
 
     [JsonPropertyName("short_description")]
-    public string ShortDescription { get; set; }
+    public string? ShortDescription { get; set; }
 
     [JsonPropertyName("publish_date")]
     public DateTime PublishDate { get; set; }
 
     [JsonPropertyName("video_playback_url")]
-    public string VideoPlaybackUrl { get; set; }
+    public string? VideoPlaybackUrl { get; set; }
 }

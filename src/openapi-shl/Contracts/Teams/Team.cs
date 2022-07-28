@@ -1,8 +1,8 @@
 using System.Text.Json.Serialization;
 
-namespace Shl.Api.Contracts;
+namespace Shl.Api.Contracts.Teams;
 
-public class Teams
+public class Team
 {
 
     [JsonPropertyName("accreditation")]

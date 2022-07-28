@@ -14,11 +14,12 @@
     <PackageId>Shl.OpenApi</PackageId>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <Authors>Andreas Jagelund</Authors>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <PackageTags>SHL, OpenApi, API, Hockey</PackageTags>
     <Description>Implementation of Swedish Hockey League OpenApi for .NET</Description>
     <RepositoryUrl>git@github.com:ajagelund/openapi-shl.git</RepositoryUrl>
     <PackageProjectUrl>https://github.com/ajagelund/openapi-shl</PackageProjectUrl>
+    <PackageOutputPath>../../nupkg</PackageOutputPath>
   </PropertyGroup>
   
   <ItemGroup>

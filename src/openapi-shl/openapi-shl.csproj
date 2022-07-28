@@ -19,6 +19,9 @@
     <Description>Implementation of Swedish Hockey League OpenApi for .NET</Description>
     <RepositoryUrl>git@github.com:ajagelund/openapi-shl.git</RepositoryUrl>
     <PackageProjectUrl>https://github.com/ajagelund/openapi-shl</PackageProjectUrl>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'">
     <PackageOutputPath>../../nupkg</PackageOutputPath>
   </PropertyGroup>
   

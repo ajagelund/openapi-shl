@@ -15,6 +15,6 @@ jobs:
 
       - name: dotnet nuget pack & push
         run: |
-          dotnet pack --no-build --include-symbols src/openapi-shl/openapi-shl.csproj
+          dotnet pack -c Release --include-symbols src/openapi-shl/openapi-shl.csproj
           dotnet nuget push *.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
           

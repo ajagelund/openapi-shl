@@ -15,6 +15,7 @@ jobs:
 
       - name: dotnet nuget push
         run: |
-          dotnet nuget push *.snupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json --skip-duplicate
-          dotnet nuget push *.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json --skip-duplicate
+          dotnet nuget SetApiKey ${{ secrets.NUGET_API_KEY }}
+          dotnet nuget push *.snupkg
+          dotnet nuget push *.nupkg
           

@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace SwedishHockeyLeague.Api.Models;
+namespace Shl.Api.Models;
 
 internal class BearerTokenProviderResponse
 {

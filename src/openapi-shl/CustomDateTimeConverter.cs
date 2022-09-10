@@ -1,7 +1,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace SwedishHockeyLeague.Api;
+namespace Shl.Api;
 
 public class CustomDateTimeConverter : JsonConverter<DateTime>
 {

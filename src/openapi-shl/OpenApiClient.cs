@@ -1,14 +1,14 @@
 using System.Net.Http.Headers;
 using System.Text.Json;
-using SwedishHockeyLeague.Api.Configuration;
-using SwedishHockeyLeague.Api.Contracts.Games;
-using SwedishHockeyLeague.Api.Contracts.Media;
-using SwedishHockeyLeague.Api.Contracts.Statistics;
-using SwedishHockeyLeague.Api.Contracts.Teams;
-using SwedishHockeyLeague.Api.Models;
-using Team = SwedishHockeyLeague.Api.Contracts.Teams.Team;
+using Shl.Api.Configuration;
+using Shl.Api.Contracts.Games;
+using Shl.Api.Contracts.Media;
+using Shl.Api.Contracts.Statistics;
+using Shl.Api.Contracts.Teams;
+using Shl.Api.Models;
+using Team = Shl.Api.Contracts.Teams.Team;
 
-namespace SwedishHockeyLeague.Api;
+namespace Shl.Api;
 
 public class OpenApiClient
 {

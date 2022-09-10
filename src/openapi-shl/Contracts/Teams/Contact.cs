@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace SwedishHockeyLeague.Api.Contracts.Teams;
+namespace Shl.Api.Contracts.Teams;
 
 public class Contact
 {

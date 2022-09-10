@@ -3,6 +3,10 @@ on:
   push:
     branches:
       - main
+
+env:
+  NETCORE_VERSION: '6.0.104'
+
 jobs:
   publish:
     name: build, pack & publish
@@ -10,11 +14,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Setup .NET Core SDK ${{ env.NETCORE_VERSION }}
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: ${{ env.NETCORE_VERSION }}
+
       - name: dotnet build
         run: dotnet build -c Release -o . src/openapi-shl/openapi-shl.csproj
 
-      - name: dotnet nuget pack & push
-        run: |
-          dotnet pack -c Release --include-symbols src/openapi-shl/openapi-shl.csproj
-          dotnet nuget push *.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
+      - name: dotnet nuget push
+        run: dotnet nuget push *.nupkg -k ${{ secrets.NUGET_API_KEY }}
           

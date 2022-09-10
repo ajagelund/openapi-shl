@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Shl.Api.Contracts.Media;
+namespace SwedishHockeyLeague.Api.Contracts.Media;
 
 public class Author
 {

@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Shl.Api.Contracts.Statistics;
+namespace SwedishHockeyLeague.Api.Contracts.Statistics;
 
 public class GoalKeeperStatistics
 {

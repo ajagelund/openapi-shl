@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Shl.Api.Contracts.Games;
+namespace SwedishHockeyLeague.Api.Contracts.Games;
 
 public class GameReport
         {

@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Shl.Api.Contracts.Media;
+namespace HockyGrejer.Api.Contracts.Media;
 
 public class Video
 {

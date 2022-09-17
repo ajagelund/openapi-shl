@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Shl.Api.Contracts.Games;
+namespace HockyGrejer.Api.Contracts.Games;
 
 public class GameReport
         {

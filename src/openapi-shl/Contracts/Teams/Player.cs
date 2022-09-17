@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Shl.Api.Contracts.Teams;
+namespace HockyGrejer.Api.Contracts.Teams;
 
 public class Player
 {

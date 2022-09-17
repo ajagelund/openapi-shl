@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Shl.Api.Contracts.Statistics;
+namespace HockyGrejer.Api.Contracts.Statistics;
 
 public class Info
 {

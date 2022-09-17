@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>HockyGrejer.Api</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>10</LangVersion>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -14,7 +14,7 @@
     <PackageId>Shl.OpenApi</PackageId>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <Authors>Andreas Jagelund</Authors>
-    <Version>0.2.2-beta2209.1</Version>
+    <Version>0.2.2-beta2209.2</Version>
     <PackageTags>SHL, OpenApi, API, Hockey</PackageTags>
     <Description>Implementation of Swedish Hockey League OpenApi for .NET</Description>
     <RepositoryUrl>git@github.com:ajagelund/openapi-shl.git</RepositoryUrl>
@@ -27,5 +27,9 @@
   
   <ItemGroup>
     <None Include="../../README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="6.0.6" />
   </ItemGroup>
 </Project>

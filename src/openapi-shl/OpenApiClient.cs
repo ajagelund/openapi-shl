@@ -1,5 +1,10 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text.Json;
+using System.Threading.Tasks;
 using HockyGrejer.Api.Configuration;
 using HockyGrejer.Api.Contracts.Games;
 using HockyGrejer.Api.Contracts.Media;
@@ -31,7 +36,7 @@ public class OpenApiClient
         _httpClient.BaseAddress = new Uri(BaseUrl);
     }
 
-    public async Task<string?> GetToken()
+    public async Task<string> GetToken()
     {
         var encodedContent = new FormUrlEncodedContent(new KeyValuePair<string, string>[]
         {

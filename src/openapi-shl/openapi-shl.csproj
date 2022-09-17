@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <RootNamespace>HockyGrejer.Api</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
     <TargetFramework>net6.0</TargetFramework>
     <LangVersion>10</LangVersion>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -14,7 +14,7 @@
     <PackageId>Shl.OpenApi</PackageId>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <Authors>Andreas Jagelund</Authors>
-    <Version>0.2.2-beta2209.3</Version>
+    <Version>0.2.2-beta2209.4</Version>
     <PackageTags>SHL, OpenApi, API, Hockey</PackageTags>
     <Description>Implementation of Swedish Hockey League OpenApi for .NET</Description>
     <RepositoryUrl>git@github.com:ajagelund/openapi-shl.git</RepositoryUrl>

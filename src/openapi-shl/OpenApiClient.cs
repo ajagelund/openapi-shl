@@ -5,15 +5,15 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text.Json;
 using System.Threading.Tasks;
-using HockyGrejer.Api.Configuration;
-using HockyGrejer.Api.Contracts.Games;
-using HockyGrejer.Api.Contracts.Media;
-using HockyGrejer.Api.Contracts.Statistics;
-using HockyGrejer.Api.Contracts.Teams;
-using HockyGrejer.Api.Models;
-using Team = HockyGrejer.Api.Contracts.Teams.Team;
+using Shl.Api.Configuration;
+using Shl.Api.Contracts.Games;
+using Shl.Api.Contracts.Media;
+using Shl.Api.Contracts.Statistics;
+using Shl.Api.Contracts.Teams;
+using Shl.Api.Models;
+using Team = Shl.Api.Contracts.Teams.Team;
 
-namespace HockyGrejer.Api;
+namespace Shl.Api;
 
 public class OpenApiClient
 {

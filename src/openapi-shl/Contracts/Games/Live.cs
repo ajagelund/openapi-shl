@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace HockyGrejer.Api.Contracts.Games;
+namespace Shl.Api.Contracts.Games;
 
 public class Live
 {

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace HockyGrejer.Api.Contracts.Teams;
+namespace Shl.Api.Contracts.Teams;
 
 public class Fact
 {

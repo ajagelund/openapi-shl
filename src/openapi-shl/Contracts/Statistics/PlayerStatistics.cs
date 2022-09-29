@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace HockyGrejer.Api.Contracts.Statistics;
+namespace Shl.Api.Contracts.Statistics;
 
 public class PlayerStatistics
 {

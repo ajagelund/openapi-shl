@@ -1,4 +1,4 @@
-namespace HockyGrejer.Api.Configuration;
+namespace Shl.Api.Configuration;
 
 public class OpenApiConfiguration
 {

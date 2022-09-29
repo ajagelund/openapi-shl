@@ -2,7 +2,7 @@ using System;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace HockyGrejer.Api;
+namespace Shl.Api;
 
 public class CustomDateTimeConverter : JsonConverter<DateTime>
 {

@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace HockyGrejer.Api.Models;
+namespace Shl.Api.Models;
 
 internal class BearerTokenProviderResponse
 {

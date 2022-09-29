@@ -1,7 +1,7 @@
 using System;
 using System.Text.Json.Serialization;
 
-namespace HockyGrejer.Api.Contracts.Media;
+namespace Shl.Api.Contracts.Media;
 
 public class Article
 {
